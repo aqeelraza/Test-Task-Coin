@@ -1,0 +1,2802 @@
+.rs-picker-toggle-wrapper {
+  vertical-align: top !important;
+}
+
+.rs-picker-default .rs-picker-toggle {
+  color: #6c757d !important;
+  border: 1px solid #dadce0 !important;
+  border-radius: 100px;
+  padding: 0.38rem 0 0.35rem 0.75rem;
+  vertical-align: top !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+.rs-picker-toggle.active,
+.rs-picker-toggle:hover {
+  color: #3c4043 !important;
+}
+
+.rs-picker-default.rs-picker-has-value .rs-picker-toggle {
+  border-color: #e8f0fe !important;
+  color: #1967d2 !important;
+  background-color: #e8f0fe !important;
+}
+
+.rs-picker-default .rs-picker-toggle:hover,
+.rs-picker-default .rs-picker-toggle.active {
+  color: #3c4043 !important;
+  background-color: #dadce0 !important;
+  border-color: #dadce0 !important;
+}
+
+.rs-picker-default .rs-picker-toggle:hover {
+  text-decoration: none;
+}
+
+/* everything below this was copied from the original styles file */
+
+.rs-picker-toggle-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.rs-picker-default:not(.rs-picker-disabled) .rs-btn:hover,
+.rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle:hover,
+.rs-picker-default:not(.rs-picker-disabled) .rs-btn.active,
+.rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle.active {
+  border-color: #1675e0;
+}
+
+.rs-picker-menu.fade.in {
+  opacity: 1;
+}
+.rs-picker-menu.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.rs-picker-menu {
+  position: absolute;
+  text-align: left;
+  z-index: 7;
+  border-radius: 6px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.06), 0 4px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06), 0 4px 4px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.rs-picker-subtle .picker-subtle-toggle {
+  position: relative;
+  z-index: 5;
+  padding-right: 32px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+}
+
+.rs-picker-subtle .picker-subtle-toggle-custom-title {
+  padding: 0 !important;
+}
+
+.rs-picker-subtle.rs-picker-disabled .picker-subtle-toggle {
+  cursor: not-allowed;
+}
+
+.rs-picker-subtle.rs-picker-disabled .picker-subtle-toggle:active,
+.rs-picker-subtle.rs-picker-disabled .picker-subtle-toggle:focus,
+.rs-picker-subtle.rs-picker-disabled .picker-subtle-toggle:hover {
+  background: none;
+}
+
+.rs-picker-subtle.rs-picker-disabled .picker-subtle-toggle:active:after,
+.rs-picker-subtle.rs-picker-disabled .picker-subtle-toggle:focus:after,
+.rs-picker-subtle.rs-picker-disabled .picker-subtle-toggle:hover:after {
+  display: none;
+}
+
+.rs-picker-cascader-menu-items > div:after,
+.rs-picker-cascader-menu-items > div:before {
+  content: ' ';
+  display: table;
+}
+
+.rs-picker-cascader-menu-items > div:after {
+  clear: both;
+}
+
+.rs-picker-cascader-search-panel {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.rs-picker-cascader-row {
+  cursor: pointer;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.rs-picker-cascader-row:hover {
+  color: #575757;
+  background-color: #f2faff;
+}
+
+.rs-picker-cascader-row-disabled {
+  cursor: not-allowed;
+}
+
+.rs-picker-cascader-row-disabled,
+.rs-picker-cascader-row-disabled:hover {
+  color: #c5c6c7;
+}
+
+.rs-picker-cascader-row-disabled strong {
+  opacity: 0.7;
+}
+
+.rs-picker-cascader-col {
+  padding: 8px 0;
+  display: inline-block;
+}
+
+.rs-picker-cascader-col:after {
+  content: '\00a0/\00a0';
+}
+
+.rs-picker-cascader-col:last-child:after {
+  display: none;
+}
+
+.rs-picker-cascader-col strong {
+  color: #3498ff;
+}
+
+.rs-picker-cascader-menu-column {
+  float: left;
+  overflow-y: auto;
+}
+
+.rs-picker-cascader-menu-items {
+  padding: 6px 0;
+}
+
+.rs-picker-cascader-menu-items li,
+.rs-picker-cascader-menu-items ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rs-picker-cascader-menu-item {
+  position: relative;
+  display: block;
+  padding: 8px 28px 8px 12px;
+  -webkit-transition: color 0.3s linear, background-color 0.3s linear;
+  transition: color 0.3s linear, background-color 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  color: #575757;
+  word-break: break-word;
+}
+
+.rs-picker-cascader-menu-items-has-children .rs-picker-cascader-menu-item {
+  padding-right: 32px;
+}
+
+.rs-picker-cascader-menu-item.rs-picker-select-menu-item-focus,
+.rs-picker-cascader-menu-item:not(.rs-picker-cascader-menu-item-disabled):focus,
+.rs-picker-cascader-menu-item:not(.rs-picker-cascader-menu-item-disabled):hover {
+  color: #575757;
+  background-color: #f2faff;
+  text-decoration: none;
+}
+
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-focus {
+  font-weight: 700;
+}
+
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active:focus,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active:hover,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active:hover:focus,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-focus,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-focus:focus,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-focus:hover,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-focus:hover:focus {
+  background-color: #f2faff;
+}
+
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active .rs-picker-cascader-menu-caret,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-focus .rs-picker-cascader-menu-caret {
+  color: #575757;
+}
+
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active:focus,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active:hover,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active:hover:focus {
+  color: #1675e0;
+}
+
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-disabled {
+  color: #c5c6c7;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active.rs-picker-cascader-menu-item-disabled,
+.rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active.rs-picker-cascader-menu-item-disabled:hover {
+  color: #a6d7ff;
+}
+
+.rs-picker-cascader-menu-caret {
+  display: inline-block;
+  margin-left: 2px;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-weight: 400;
+}
+
+.rs-picker-cascader-menu-caret:before {
+  font-family: rsuite-icon-font !important;
+  content: '\ea0c';
+}
+
+.rs-picker-check-menu-items {
+  margin-bottom: 6px;
+  overflow-y: auto;
+}
+
+.rs-picker-check-menu-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rs-picker-check-menu-items .rs-picker-check-menu-group:not(:first-child) {
+  margin-top: 6px;
+  border-top: 1px solid #e5e5ea;
+  padding-top: 6px;
+}
+
+.rs-picker-check-menu-items .rs-picker-check-menu-group-title {
+  padding: 8px 12px;
+  padding-right: 32px;
+  position: relative;
+  cursor: default;
+  -webkit-transition: color 0.3s linear, background-color 0.3s linear;
+  transition: color 0.3s linear, background-color 0.3s linear;
+  color: #272c36;
+}
+
+.rs-picker-check-menu-items .rs-picker-check-menu-group-title:hover {
+  background-color: #f2faff;
+}
+
+.rs-picker-check-menu-items .rs-picker-check-menu-group-title .rs-picker-check-menu-group-caret {
+  display: inline-block;
+  margin-left: 2px;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.rs-picker-check-menu-items .rs-picker-check-menu-group-title .rs-picker-check-menu-group-caret:before {
+  content: '\F0D7';
+  font-family: rsuite-icon-font;
+}
+
+.rs-picker-check-menu-items .rs-picker-check-menu-group.folded .rs-picker-check-menu-group-caret {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.rs-picker-check-menu-items .rs-check-item.rs-checkbox-checked .rs-checkbox-checker > label {
+  font-weight: 700;
+}
+
+.rs-picker-date-inline .rs-calendar {
+  height: 286px;
+}
+
+.rs-picker-menu .rs-calendar {
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-month-dropdown-cell-content,
+.rs-picker-menu .rs-calendar .rs-calendar-table-cell-content {
+  width: 30px;
+  height: 30px;
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-table-header-row .rs-calendar-table-cell-content {
+  height: 24px;
+  padding-top: 0;
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-table-cell-content {
+  padding-left: 0;
+  padding-right: 0;
+  display: inline-block;
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-month-dropdown-scroll {
+  height: 227px;
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-time-dropdown-column > ul {
+  height: 214px;
+  padding-bottom: 184px;
+}
+
+.rs-picker-daterange .rs-picker-toggle-caret:before {
+  content: '\f073' !important;
+  line-height: 17px;
+}
+
+.rs-picker-daterange-menu .rs-calendar-header {
+  width: 100%;
+  text-align: center;
+}
+
+.rs-picker-daterange-menu .rs-calendar-header-month-toolbar {
+  float: none;
+}
+
+.rs-picker-daterange-menu .rs-calendar-month-dropdown {
+  z-index: 1;
+}
+
+.rs-picker-daterange-menu .rs-calendar-month-dropdown-list {
+  width: 185px;
+}
+
+.rs-picker-daterange-menu .rs-picker-toolbar {
+  margin-top: 4px;
+}
+
+.rs-picker-daterange-header {
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-bottom: 1px solid #e5e5ea;
+}
+
+.rs-picker-daterange-calendar-group {
+  height: 274px;
+  min-width: 510px;
+}
+
+.rs-divider {
+  background-color: #e5e5ea;
+}
+
+.rs-calendar {
+  background-color: #fff;
+  padding-top: 12px;
+  position: relative;
+  min-height: 266px;
+  overflow: hidden;
+}
+
+.rs-calendar-bordered .rs-calendar-table {
+  border: 1px solid #f2f2f5;
+  border-radius: 6px;
+}
+
+.rs-calendar-bordered .rs-calendar-table-header-row .rs-calendar-table-cell,
+.rs-calendar-bordered .rs-calendar-table-row:not(:last-child) .rs-calendar-table-cell {
+  border-bottom: 1px solid #f2f2f5;
+}
+
+.rs-calendar-bordered .rs-calendar-month-dropdown {
+  border: 1px solid #e5e5ea;
+  border-radius: 6px;
+}
+
+.rs-calendar-panel .rs-calendar-header {
+  width: 100%;
+  padding-bottom: 6px;
+}
+
+.rs-calendar-panel .rs-calendar-header:after,
+.rs-calendar-panel .rs-calendar-header:before {
+  content: ' ';
+  display: table;
+}
+
+.rs-calendar-panel .rs-calendar-header:after {
+  clear: both;
+}
+
+.rs-calendar-panel .rs-calendar-header .rs-calendar-btn-today {
+  float: right;
+}
+
+.rs-calendar-panel .rs-calendar-header-backward,
+.rs-calendar-panel .rs-calendar-header-forward,
+.rs-calendar-panel .rs-calendar-header-title {
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 6px;
+}
+
+.rs-calendar-panel .rs-calendar-header-backward.rs-btn-ghost,
+.rs-calendar-panel .rs-calendar-header-forward.rs-btn-ghost,
+.rs-calendar-panel .rs-calendar-header-title.rs-btn-ghost {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.rs-calendar-panel .rs-calendar-header-backward.rs-btn-icon,
+.rs-calendar-panel .rs-calendar-header-forward.rs-btn-icon,
+.rs-calendar-panel .rs-calendar-header-title.rs-btn-icon {
+  padding-left: 24px;
+  height: 36px;
+  position: relative;
+}
+
+.rs-btn-ghost.rs-calendar-panel .rs-calendar-header-backward.rs-btn-icon,
+.rs-btn-ghost.rs-calendar-panel .rs-calendar-header-forward.rs-btn-icon,
+.rs-btn-ghost.rs-calendar-panel .rs-calendar-header-title.rs-btn-icon {
+  padding-left: 22px;
+}
+
+.rs-calendar-panel .rs-calendar-header-backward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-left,
+.rs-calendar-panel .rs-calendar-header-forward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-left,
+.rs-calendar-panel .rs-calendar-header-title.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-left {
+  padding-left: 44px;
+}
+
+.rs-calendar-panel .rs-calendar-header-backward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right,
+.rs-calendar-panel .rs-calendar-header-forward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right,
+.rs-calendar-panel .rs-calendar-header-title.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right {
+  padding-left: 12px;
+  padding-right: 44px;
+}
+
+.rs-calendar-panel .rs-calendar-header-backward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right > .rs-icon,
+.rs-calendar-panel .rs-calendar-header-forward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right > .rs-icon,
+.rs-calendar-panel .rs-calendar-header-title.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right > .rs-icon {
+  left: auto;
+  right: 0;
+}
+
+.rs-calendar-panel .rs-calendar-header-backward.rs-btn-icon > .rs-icon,
+.rs-calendar-panel .rs-calendar-header-forward.rs-btn-icon > .rs-icon,
+.rs-calendar-panel .rs-calendar-header-title.rs-btn-icon > .rs-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 36px;
+  height: 36px;
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+.rs-btn-ghost.rs-calendar-panel .rs-calendar-header-backward.rs-btn-icon > .rs-icon,
+.rs-btn-ghost.rs-calendar-panel .rs-calendar-header-forward.rs-btn-icon > .rs-icon,
+.rs-btn-ghost.rs-calendar-panel .rs-calendar-header-title.rs-btn-icon > .rs-icon {
+  width: 34px;
+  height: 34px;
+  padding: 7px 0;
+}
+
+.rs-calendar-panel .rs-calendar-header-backward.rs-btn-icon > .rs-icon > svg,
+.rs-calendar-panel .rs-calendar-header-forward.rs-btn-icon > .rs-icon > svg,
+.rs-calendar-panel .rs-calendar-header-title.rs-btn-icon > .rs-icon > svg {
+  height: 14px;
+  vertical-align: middle;
+}
+
+.rs-calendar-panel .rs-calendar-header-backward.rs-btn-icon-circle,
+.rs-calendar-panel .rs-calendar-header-forward.rs-btn-icon-circle,
+.rs-calendar-panel .rs-calendar-header-title.rs-btn-icon-circle {
+  width: 36px;
+  padding: 8px;
+}
+
+.rs-calendar-panel .rs-calendar-header-backward,
+.rs-calendar-panel .rs-calendar-header-forward {
+  width: 31px;
+  float: none !important;
+}
+
+.rs-calendar-panel.rs-calendar-show-month-dropdown .rs-calendar-header-backward,
+.rs-calendar-panel.rs-calendar-show-month-dropdown .rs-calendar-header-forward {
+  display: inline-block;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.rs-calendar-panel .rs-calendar-header-month-toolbar {
+  width: auto !important;
+}
+
+.rs-calendar-panel .rs-calendar-show-month-dropdown,
+.rs-calendar-panel.rs-calendar-show-month-dropdown .rs-calendar-header-month-toolbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.rs-calendar-panel .rs-calendar-table-header-row .rs-calendar-table-cell-content {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.rs-calendar-panel .rs-calendar-table-cell-is-today .rs-calendar-table-cell-day {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  background-color: #3498ff;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rs-calendar-panel .rs-calendar-table-cell-is-today .rs-calendar-table-cell-content {
+  border-color: transparent;
+}
+
+.rs-calendar-panel .rs-calendar-table-cell-selected .rs-calendar-table-cell-content {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid #3498ff;
+  padding: 4px;
+}
+
+.rs-calendar-panel .rs-calendar-table-cell-day {
+  margin-top: 3px;
+  display: block;
+  text-align: center;
+}
+
+.rs-calendar-panel .rs-calendar-month-dropdown {
+  margin-left: 12px;
+  margin-right: 12px;
+  top: 54px;
+  width: calc(100% - 24px);
+}
+
+.rs-calendar-panel:not(.rs-calendar-compact) .rs-calendar-month-dropdown-scroll {
+  height: 644px;
+}
+
+.rs-calendar-panel.rs-calendar-compact .rs-calendar-month-dropdown-scroll {
+  height: 344px;
+}
+
+.rs-calendar-panel:not(.rs-calendar-compact) .rs-calendar-table-row:not(.rs-calendar-table-header-row) .rs-calendar-table-cell-content {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.rs-calendar-panel:not(.rs-calendar-compact) .rs-calendar-table-cell {
+  vertical-align: top;
+}
+
+.rs-calendar-panel .rs-calendar-table-cell {
+  padding: 0 1px;
+  line-height: 0;
+}
+
+.rs-calendar-panel .rs-calendar-table-cell-content {
+  width: 100%;
+  border-radius: 0;
+}
+
+.rs-calendar-panel .rs-calendar-table-row:last-child :first-child .rs-calendar-table-cell-content {
+  border-bottom-left-radius: 6px;
+}
+
+.rs-calendar-panel .rs-calendar-table-row:last-child :last-child .rs-calendar-table-cell-content {
+  border-bottom-right-radius: 6px;
+}
+
+.rs-calendar-panel.rs-calendar-compact .rs-calendar-table-row:not(.rs-calendar-table-header-row) .rs-calendar-table-cell-content {
+  height: 50px;
+}
+
+.rs-calendar-show-month-dropdown .rs-calendar-header-month-toolbar {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.rs-calendar-show-month-dropdown .rs-calendar-header-backward,
+.rs-calendar-show-month-dropdown .rs-calendar-header-forward {
+  display: none;
+}
+
+.rs-calendar-show-month-dropdown .rs-calendar-header-title-date {
+  color: #1675e0;
+  background: transparent;
+}
+
+.rs-calendar-show-month-dropdown .rs-calendar-header-title-date.rs-calendar-header-error {
+  color: #f44336;
+}
+
+.rs-calendar-show-month-dropdown .rs-calendar-header-title-date.rs-calendar-header-error:focus,
+.rs-calendar-show-month-dropdown .rs-calendar-header-title-date.rs-calendar-header-error:hover:active {
+  color: #fff !important;
+}
+
+.rs-calendar-show-time-dropdown .rs-calendar-header-title-time {
+  color: #1675e0;
+  background: transparent;
+}
+
+.rs-calendar-show-time-dropdown .rs-calendar-header-title-time.rs-calendar-header-error {
+  color: #f44336;
+}
+
+.rs-calendar-show-time-dropdown .rs-calendar-header-title-time.rs-calendar-header-error:hover:active {
+  color: #fff;
+}
+
+.rs-calendar-table-cell-in-range,
+.rs-calendar-table-cell-selected {
+  position: relative;
+}
+
+.rs-calendar-table-cell-in-range:before,
+.rs-calendar-table-cell-selected:before {
+  content: '';
+  display: block;
+  width: 100%;
+  margin-top: 3px;
+  height: 24px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.rs-calendar-table-cell-in-range .rs-calendar-table-cell-content,
+.rs-calendar-table-cell-selected .rs-calendar-table-cell-content {
+  z-index: 1;
+  position: relative;
+}
+
+.rs-calendar-table-cell-in-range:before {
+  background-color: rgba(204, 233, 255, 0.5);
+}
+
+.rs-calendar-month-dropdown-scroll div:focus {
+  outline: none;
+}
+
+.rs-calendar-header {
+  width: 280px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.rs-calendar-header:after,
+.rs-calendar-header:before {
+  content: ' ';
+  display: table;
+}
+
+.rs-calendar-header:after {
+  clear: both;
+}
+
+.rs-calendar-header-month-toolbar,
+.rs-calendar-header-time-toolbar {
+  display: inline-block;
+}
+
+.rs-calendar-header-month-toolbar {
+  float: left;
+}
+
+.rs-calendar-header-time-toolbar {
+  float: right;
+}
+
+.rs-calendar-header-backward,
+.rs-calendar-header-forward,
+.rs-calendar-header-title {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: 0 !important;
+  white-space: nowrap;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 8px 12px;
+  -webkit-transition: color 0.2s linear, background-color 0.3s linear;
+  transition: color 0.2s linear, background-color 0.3s linear;
+  color: #8e8e93;
+  background-color: transparent;
+  padding: 2px 8px;
+  font-size: 12px;
+  line-height: 1.66666667;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+.rs-calendar-header-backward.rs-btn-ghost,
+.rs-calendar-header-forward.rs-btn-ghost,
+.rs-calendar-header-title.rs-btn-ghost {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.rs-calendar-header-backward.rs-btn-icon,
+.rs-calendar-header-forward.rs-btn-icon,
+.rs-calendar-header-title.rs-btn-icon {
+  padding-left: 24px;
+  height: 36px;
+  position: relative;
+}
+
+.rs-btn-ghost.rs-calendar-header-backward.rs-btn-icon,
+.rs-btn-ghost.rs-calendar-header-forward.rs-btn-icon,
+.rs-btn-ghost.rs-calendar-header-title.rs-btn-icon {
+  padding-left: 22px;
+}
+
+.rs-calendar-header-backward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-left,
+.rs-calendar-header-forward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-left,
+.rs-calendar-header-title.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-left {
+  padding-left: 44px;
+}
+
+.rs-calendar-header-backward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right,
+.rs-calendar-header-forward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right,
+.rs-calendar-header-title.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right {
+  padding-left: 12px;
+  padding-right: 44px;
+}
+
+.rs-calendar-header-backward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right > .rs-icon,
+.rs-calendar-header-forward.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right > .rs-icon,
+.rs-calendar-header-title.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right > .rs-icon {
+  left: auto;
+  right: 0;
+}
+
+.rs-calendar-header-backward.rs-btn-icon > .rs-icon,
+.rs-calendar-header-forward.rs-btn-icon > .rs-icon,
+.rs-calendar-header-title.rs-btn-icon > .rs-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 36px;
+  height: 36px;
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+.rs-btn-ghost.rs-calendar-header-backward.rs-btn-icon > .rs-icon,
+.rs-btn-ghost.rs-calendar-header-forward.rs-btn-icon > .rs-icon,
+.rs-btn-ghost.rs-calendar-header-title.rs-btn-icon > .rs-icon {
+  width: 34px;
+  height: 34px;
+  padding: 7px 0;
+}
+
+.rs-calendar-header-backward.rs-btn-icon > .rs-icon > svg,
+.rs-calendar-header-forward.rs-btn-icon > .rs-icon > svg,
+.rs-calendar-header-title.rs-btn-icon > .rs-icon > svg {
+  height: 14px;
+  vertical-align: middle;
+}
+
+.rs-calendar-header-backward.rs-btn-icon-circle,
+.rs-calendar-header-forward.rs-btn-icon-circle,
+.rs-calendar-header-title.rs-btn-icon-circle {
+  width: 36px;
+  padding: 8px;
+}
+
+.rs-calendar-header-backward:focus,
+.rs-calendar-header-backward:hover,
+.rs-calendar-header-forward:focus,
+.rs-calendar-header-forward:hover,
+.rs-calendar-header-title:focus,
+.rs-calendar-header-title:hover {
+  color: #575757;
+  text-decoration: none;
+}
+
+.rs-calendar-header-backward.rs-btn-active,
+.rs-calendar-header-backward:active,
+.rs-calendar-header-forward.rs-btn-active,
+.rs-calendar-header-forward:active,
+.rs-calendar-header-title.rs-btn-active,
+.rs-calendar-header-title:active {
+  outline: 0;
+  background-image: none;
+}
+
+.rs-calendar-header-backward.rs-btn-focus,
+.rs-calendar-header-backward:focus,
+.rs-calendar-header-backward:hover,
+.rs-calendar-header-forward.rs-btn-focus,
+.rs-calendar-header-forward:focus,
+.rs-calendar-header-forward:hover,
+.rs-calendar-header-title.rs-btn-focus,
+.rs-calendar-header-title:focus,
+.rs-calendar-header-title:hover {
+  color: #fff;
+  background: #f7f7fa;
+}
+
+.rs-calendar-header-backward.rs-btn-active,
+.rs-calendar-header-backward.rs-btn-active.focus,
+.rs-calendar-header-backward.rs-btn-active:focus,
+.rs-calendar-header-backward.rs-btn-active:hover,
+.rs-calendar-header-backward:active,
+.rs-calendar-header-backward:active.focus,
+.rs-calendar-header-backward:active:focus,
+.rs-calendar-header-backward:active:hover,
+.rs-calendar-header-forward.rs-btn-active,
+.rs-calendar-header-forward.rs-btn-active.focus,
+.rs-calendar-header-forward.rs-btn-active:focus,
+.rs-calendar-header-forward.rs-btn-active:hover,
+.rs-calendar-header-forward:active,
+.rs-calendar-header-forward:active.focus,
+.rs-calendar-header-forward:active:focus,
+.rs-calendar-header-forward:active:hover,
+.rs-calendar-header-title.rs-btn-active,
+.rs-calendar-header-title.rs-btn-active.focus,
+.rs-calendar-header-title.rs-btn-active:focus,
+.rs-calendar-header-title.rs-btn-active:hover,
+.rs-calendar-header-title:active,
+.rs-calendar-header-title:active.focus,
+.rs-calendar-header-title:active:focus,
+.rs-calendar-header-title:active:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title:hover {
+  color: #fff;
+  background-color: #b2b1f0;
+}
+
+.rs-calendar-header-backward.rs-btn-disabled,
+.rs-calendar-header-backward.rs-btn-disabled.focus,
+.rs-calendar-header-backward.rs-btn-disabled:active,
+.rs-calendar-header-backward.rs-btn-disabled:focus,
+.rs-calendar-header-backward.rs-btn-disabled:hover,
+.rs-calendar-header-backward.rs-btn-disabled:hover:active,
+.rs-calendar-header-forward.rs-btn-disabled,
+.rs-calendar-header-forward.rs-btn-disabled.focus,
+.rs-calendar-header-forward.rs-btn-disabled:active,
+.rs-calendar-header-forward.rs-btn-disabled:focus,
+.rs-calendar-header-forward.rs-btn-disabled:hover,
+.rs-calendar-header-forward.rs-btn-disabled:hover:active,
+.rs-calendar-header-title.rs-btn-disabled,
+.rs-calendar-header-title.rs-btn-disabled.focus,
+.rs-calendar-header-title.rs-btn-disabled:active,
+.rs-calendar-header-title.rs-btn-disabled:focus,
+.rs-calendar-header-title.rs-btn-disabled:hover,
+.rs-calendar-header-title.rs-btn-disabled:hover:active {
+  color: #c5c6c7;
+  background: none;
+}
+
+.rs-calendar-header-backward.rs-btn-loading:active,
+.rs-calendar-header-backward.rs-btn-loading:focus,
+.rs-calendar-header-backward.rs-btn-loading:hover,
+.rs-calendar-header-backward.rs-btn-loading:hover:active,
+.rs-calendar-header-backward.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-forward.rs-btn-loading:active,
+.rs-calendar-header-forward.rs-btn-loading:focus,
+.rs-calendar-header-forward.rs-btn-loading:hover,
+.rs-calendar-header-forward.rs-btn-loading:hover:active,
+.rs-calendar-header-forward.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-title.rs-btn-loading:active,
+.rs-calendar-header-title.rs-btn-loading:focus,
+.rs-calendar-header-title.rs-btn-loading:hover,
+.rs-calendar-header-title.rs-btn-loading:hover:active,
+.rs-calendar-header-title.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #8e8e93;
+  background-color: transparent;
+}
+
+.rs-calendar-header-backward.rs-btn-disabled,
+.rs-calendar-header-backward.rs-btn-disabled:active,
+.rs-calendar-header-backward.rs-btn-disabled:focus,
+.rs-calendar-header-backward.rs-btn-disabled:hover,
+.rs-calendar-header-forward.rs-btn-disabled,
+.rs-calendar-header-forward.rs-btn-disabled:active,
+.rs-calendar-header-forward.rs-btn-disabled:focus,
+.rs-calendar-header-forward.rs-btn-disabled:hover,
+.rs-calendar-header-title.rs-btn-disabled,
+.rs-calendar-header-title.rs-btn-disabled:active,
+.rs-calendar-header-title.rs-btn-disabled:focus,
+.rs-calendar-header-title.rs-btn-disabled:hover {
+  opacity: 1;
+}
+
+.rs-calendar-header-backward.rs-btn-focus,
+.rs-calendar-header-backward:focus,
+.rs-calendar-header-backward:hover,
+.rs-calendar-header-forward.rs-btn-focus,
+.rs-calendar-header-forward:focus,
+.rs-calendar-header-forward:hover,
+.rs-calendar-header-title.rs-btn-focus,
+.rs-calendar-header-title:focus,
+.rs-calendar-header-title:hover {
+  color: #575757;
+}
+
+.rs-calendar-header-backward.rs-btn-active,
+.rs-calendar-header-backward:active,
+.rs-calendar-header-forward.rs-btn-active,
+.rs-calendar-header-forward:active,
+.rs-calendar-header-title.rs-btn-active,
+.rs-calendar-header-title:active,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title {
+  color: #272c36;
+  background-color: #e5e5ea;
+  background-image: none;
+}
+
+.rs-calendar-header-backward.rs-btn-active.focus,
+.rs-calendar-header-backward.rs-btn-active:focus,
+.rs-calendar-header-backward.rs-btn-active:hover,
+.rs-calendar-header-backward:active.focus,
+.rs-calendar-header-backward:active:focus,
+.rs-calendar-header-backward:active:hover,
+.rs-calendar-header-forward.rs-btn-active.focus,
+.rs-calendar-header-forward.rs-btn-active:focus,
+.rs-calendar-header-forward.rs-btn-active:hover,
+.rs-calendar-header-forward:active.focus,
+.rs-calendar-header-forward:active:focus,
+.rs-calendar-header-forward:active:hover,
+.rs-calendar-header-title.rs-btn-active.focus,
+.rs-calendar-header-title.rs-btn-active:focus,
+.rs-calendar-header-title.rs-btn-active:hover,
+.rs-calendar-header-title:active.focus,
+.rs-calendar-header-title:active:focus,
+.rs-calendar-header-title:active:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title:hover {
+  color: #272c36;
+  background-color: #e5e5ea;
+}
+
+.rs-calendar-header-backward.rs-btn-red,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-loading:active,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-loading:focus,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-loading:hover,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-loading:hover:active,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-forward.rs-btn-red,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-loading:active,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-loading:focus,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-loading:hover,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-loading:hover:active,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-title.rs-btn-red,
+.rs-calendar-header-title.rs-btn-red.rs-btn-loading:active,
+.rs-calendar-header-title.rs-btn-red.rs-btn-loading:focus,
+.rs-calendar-header-title.rs-btn-red.rs-btn-loading:hover,
+.rs-calendar-header-title.rs-btn-red.rs-btn-loading:hover:active,
+.rs-calendar-header-title.rs-btn-red.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #8e8e93;
+  background-color: transparent;
+}
+
+.rs-calendar-header-backward.rs-btn-red.rs-btn-focus,
+.rs-calendar-header-backward.rs-btn-red:focus,
+.rs-calendar-header-backward.rs-btn-red:hover,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-focus,
+.rs-calendar-header-forward.rs-btn-red:focus,
+.rs-calendar-header-forward.rs-btn-red:hover,
+.rs-calendar-header-title.rs-btn-red.rs-btn-focus,
+.rs-calendar-header-title.rs-btn-red:focus,
+.rs-calendar-header-title.rs-btn-red:hover {
+  color: #fff;
+  background: #f44336;
+}
+
+.rs-calendar-header-backward.rs-btn-red.rs-btn-active,
+.rs-calendar-header-backward.rs-btn-red:active,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-active,
+.rs-calendar-header-forward.rs-btn-red:active,
+.rs-calendar-header-title.rs-btn-red.rs-btn-active,
+.rs-calendar-header-title.rs-btn-red:active,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-red,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-red,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-red {
+  color: #fff;
+  background-color: #eb3626;
+  background-image: none;
+}
+
+.rs-calendar-header-backward.rs-btn-red.rs-btn-active.focus,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-active:focus,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-active:hover,
+.rs-calendar-header-backward.rs-btn-red:active.focus,
+.rs-calendar-header-backward.rs-btn-red:active:focus,
+.rs-calendar-header-backward.rs-btn-red:active:hover,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-active.focus,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-active:focus,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-active:hover,
+.rs-calendar-header-forward.rs-btn-red:active.focus,
+.rs-calendar-header-forward.rs-btn-red:active:focus,
+.rs-calendar-header-forward.rs-btn-red:active:hover,
+.rs-calendar-header-title.rs-btn-red.rs-btn-active.focus,
+.rs-calendar-header-title.rs-btn-red.rs-btn-active:focus,
+.rs-calendar-header-title.rs-btn-red.rs-btn-active:hover,
+.rs-calendar-header-title.rs-btn-red:active.focus,
+.rs-calendar-header-title.rs-btn-red:active:focus,
+.rs-calendar-header-title.rs-btn-red:active:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-red.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-red:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-red:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-red.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-red:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-red:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-red.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-red:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-red:hover {
+  color: #fff;
+  background-color: #eb3626;
+}
+
+.rs-calendar-header-backward.rs-btn-red.rs-btn-disabled,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-disabled.focus,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-disabled:active,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-disabled:focus,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-disabled:hover,
+.rs-calendar-header-backward.rs-btn-red.rs-btn-disabled:hover:active,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-disabled,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-disabled.focus,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-disabled:active,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-disabled:focus,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-disabled:hover,
+.rs-calendar-header-forward.rs-btn-red.rs-btn-disabled:hover:active,
+.rs-calendar-header-title.rs-btn-red.rs-btn-disabled,
+.rs-calendar-header-title.rs-btn-red.rs-btn-disabled.focus,
+.rs-calendar-header-title.rs-btn-red.rs-btn-disabled:active,
+.rs-calendar-header-title.rs-btn-red.rs-btn-disabled:focus,
+.rs-calendar-header-title.rs-btn-red.rs-btn-disabled:hover,
+.rs-calendar-header-title.rs-btn-red.rs-btn-disabled:hover:active {
+  color: #c5c6c7;
+  background: none;
+}
+
+.rs-calendar-header-backward.rs-btn-orange,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-loading:active,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-loading:focus,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-loading:hover,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-loading:hover:active,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-forward.rs-btn-orange,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-loading:active,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-loading:focus,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-loading:hover,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-loading:hover:active,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-title.rs-btn-orange,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-loading:active,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-loading:focus,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-loading:hover,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-loading:hover:active,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #8e8e93;
+  background-color: transparent;
+}
+
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-focus,
+.rs-calendar-header-backward.rs-btn-orange:focus,
+.rs-calendar-header-backward.rs-btn-orange:hover,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-focus,
+.rs-calendar-header-forward.rs-btn-orange:focus,
+.rs-calendar-header-forward.rs-btn-orange:hover,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-focus,
+.rs-calendar-header-title.rs-btn-orange:focus,
+.rs-calendar-header-title.rs-btn-orange:hover {
+  color: #fff;
+  background: #ff9800;
+}
+
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-active,
+.rs-calendar-header-backward.rs-btn-orange:active,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-active,
+.rs-calendar-header-forward.rs-btn-orange:active,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-active,
+.rs-calendar-header-title.rs-btn-orange:active,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-orange,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-orange,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-orange {
+  color: #fff;
+  background-color: #f59700;
+  background-image: none;
+}
+
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-active.focus,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-active:focus,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-active:hover,
+.rs-calendar-header-backward.rs-btn-orange:active.focus,
+.rs-calendar-header-backward.rs-btn-orange:active:focus,
+.rs-calendar-header-backward.rs-btn-orange:active:hover,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-active.focus,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-active:focus,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-active:hover,
+.rs-calendar-header-forward.rs-btn-orange:active.focus,
+.rs-calendar-header-forward.rs-btn-orange:active:focus,
+.rs-calendar-header-forward.rs-btn-orange:active:hover,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-active.focus,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-active:focus,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-active:hover,
+.rs-calendar-header-title.rs-btn-orange:active.focus,
+.rs-calendar-header-title.rs-btn-orange:active:focus,
+.rs-calendar-header-title.rs-btn-orange:active:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-orange.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-orange:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-orange:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-orange.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-orange:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-orange:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-orange.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-orange:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-orange:hover {
+  color: #fff;
+  background-color: #f59700;
+}
+
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-disabled,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-disabled.focus,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-disabled:active,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-disabled:focus,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-disabled:hover,
+.rs-calendar-header-backward.rs-btn-orange.rs-btn-disabled:hover:active,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-disabled,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-disabled.focus,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-disabled:active,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-disabled:focus,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-disabled:hover,
+.rs-calendar-header-forward.rs-btn-orange.rs-btn-disabled:hover:active,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-disabled,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-disabled.focus,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-disabled:active,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-disabled:focus,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-disabled:hover,
+.rs-calendar-header-title.rs-btn-orange.rs-btn-disabled:hover:active {
+  color: #c5c6c7;
+  background: none;
+}
+
+.rs-calendar-header-backward.rs-btn-yellow,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-loading:active,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-loading:focus,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-loading:hover,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-loading:hover:active,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-forward.rs-btn-yellow,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-loading:active,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-loading:focus,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-loading:hover,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-loading:hover:active,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-title.rs-btn-yellow,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-loading:active,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-loading:focus,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-loading:hover,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-loading:hover:active,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #8e8e93;
+  background-color: transparent;
+}
+
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-focus,
+.rs-calendar-header-backward.rs-btn-yellow:focus,
+.rs-calendar-header-backward.rs-btn-yellow:hover,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-focus,
+.rs-calendar-header-forward.rs-btn-yellow:focus,
+.rs-calendar-header-forward.rs-btn-yellow:hover,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-focus,
+.rs-calendar-header-title.rs-btn-yellow:focus,
+.rs-calendar-header-title.rs-btn-yellow:hover {
+  color: #fff;
+  background: #ffca28;
+}
+
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-active,
+.rs-calendar-header-backward.rs-btn-yellow:active,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-active,
+.rs-calendar-header-forward.rs-btn-yellow:active,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-active,
+.rs-calendar-header-title.rs-btn-yellow:active,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-yellow,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-yellow,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-yellow {
+  color: #fff;
+  background-color: #f5c31d;
+  background-image: none;
+}
+
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-active.focus,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-active:focus,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-active:hover,
+.rs-calendar-header-backward.rs-btn-yellow:active.focus,
+.rs-calendar-header-backward.rs-btn-yellow:active:focus,
+.rs-calendar-header-backward.rs-btn-yellow:active:hover,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-active.focus,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-active:focus,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-active:hover,
+.rs-calendar-header-forward.rs-btn-yellow:active.focus,
+.rs-calendar-header-forward.rs-btn-yellow:active:focus,
+.rs-calendar-header-forward.rs-btn-yellow:active:hover,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-active.focus,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-active:focus,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-active:hover,
+.rs-calendar-header-title.rs-btn-yellow:active.focus,
+.rs-calendar-header-title.rs-btn-yellow:active:focus,
+.rs-calendar-header-title.rs-btn-yellow:active:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-yellow.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-yellow:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-yellow:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-yellow.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-yellow:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-yellow:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-yellow.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-yellow:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-yellow:hover {
+  color: #fff;
+  background-color: #f5c31d;
+}
+
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-disabled,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-disabled.focus,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-disabled:active,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-disabled:focus,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-disabled:hover,
+.rs-calendar-header-backward.rs-btn-yellow.rs-btn-disabled:hover:active,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-disabled,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-disabled.focus,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-disabled:active,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-disabled:focus,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-disabled:hover,
+.rs-calendar-header-forward.rs-btn-yellow.rs-btn-disabled:hover:active,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-disabled,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-disabled.focus,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-disabled:active,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-disabled:focus,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-disabled:hover,
+.rs-calendar-header-title.rs-btn-yellow.rs-btn-disabled:hover:active {
+  color: #c5c6c7;
+  background: none;
+}
+
+.rs-calendar-header-backward.rs-btn-green,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-loading:active,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-loading:focus,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-loading:hover,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-loading:hover:active,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-forward.rs-btn-green,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-loading:active,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-loading:focus,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-loading:hover,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-loading:hover:active,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-title.rs-btn-green,
+.rs-calendar-header-title.rs-btn-green.rs-btn-loading:active,
+.rs-calendar-header-title.rs-btn-green.rs-btn-loading:focus,
+.rs-calendar-header-title.rs-btn-green.rs-btn-loading:hover,
+.rs-calendar-header-title.rs-btn-green.rs-btn-loading:hover:active,
+.rs-calendar-header-title.rs-btn-green.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #8e8e93;
+  background-color: transparent;
+}
+
+.rs-calendar-header-backward.rs-btn-green.rs-btn-focus,
+.rs-calendar-header-backward.rs-btn-green:focus,
+.rs-calendar-header-backward.rs-btn-green:hover,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-focus,
+.rs-calendar-header-forward.rs-btn-green:focus,
+.rs-calendar-header-forward.rs-btn-green:hover,
+.rs-calendar-header-title.rs-btn-green.rs-btn-focus,
+.rs-calendar-header-title.rs-btn-green:focus,
+.rs-calendar-header-title.rs-btn-green:hover {
+  color: #fff;
+  background: #4caf50;
+}
+
+.rs-calendar-header-backward.rs-btn-green.rs-btn-active,
+.rs-calendar-header-backward.rs-btn-green:active,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-active,
+.rs-calendar-header-forward.rs-btn-green:active,
+.rs-calendar-header-title.rs-btn-green.rs-btn-active,
+.rs-calendar-header-title.rs-btn-green:active,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-green,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-green,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-green {
+  color: #fff;
+  background-color: #37ab3c;
+  background-image: none;
+}
+
+.rs-calendar-header-backward.rs-btn-green.rs-btn-active.focus,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-active:focus,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-active:hover,
+.rs-calendar-header-backward.rs-btn-green:active.focus,
+.rs-calendar-header-backward.rs-btn-green:active:focus,
+.rs-calendar-header-backward.rs-btn-green:active:hover,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-active.focus,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-active:focus,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-active:hover,
+.rs-calendar-header-forward.rs-btn-green:active.focus,
+.rs-calendar-header-forward.rs-btn-green:active:focus,
+.rs-calendar-header-forward.rs-btn-green:active:hover,
+.rs-calendar-header-title.rs-btn-green.rs-btn-active.focus,
+.rs-calendar-header-title.rs-btn-green.rs-btn-active:focus,
+.rs-calendar-header-title.rs-btn-green.rs-btn-active:hover,
+.rs-calendar-header-title.rs-btn-green:active.focus,
+.rs-calendar-header-title.rs-btn-green:active:focus,
+.rs-calendar-header-title.rs-btn-green:active:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-green.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-green:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-green:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-green.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-green:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-green:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-green.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-green:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-green:hover {
+  color: #fff;
+  background-color: #37ab3c;
+}
+
+.rs-calendar-header-backward.rs-btn-green.rs-btn-disabled,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-disabled.focus,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-disabled:active,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-disabled:focus,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-disabled:hover,
+.rs-calendar-header-backward.rs-btn-green.rs-btn-disabled:hover:active,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-disabled,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-disabled.focus,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-disabled:active,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-disabled:focus,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-disabled:hover,
+.rs-calendar-header-forward.rs-btn-green.rs-btn-disabled:hover:active,
+.rs-calendar-header-title.rs-btn-green.rs-btn-disabled,
+.rs-calendar-header-title.rs-btn-green.rs-btn-disabled.focus,
+.rs-calendar-header-title.rs-btn-green.rs-btn-disabled:active,
+.rs-calendar-header-title.rs-btn-green.rs-btn-disabled:focus,
+.rs-calendar-header-title.rs-btn-green.rs-btn-disabled:hover,
+.rs-calendar-header-title.rs-btn-green.rs-btn-disabled:hover:active {
+  color: #c5c6c7;
+  background: none;
+}
+
+.rs-calendar-header-backward.rs-btn-cyan,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-loading:active,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-loading:focus,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-loading:hover,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-loading:hover:active,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-forward.rs-btn-cyan,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-loading:active,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-loading:focus,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-loading:hover,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-loading:hover:active,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-title.rs-btn-cyan,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-loading:active,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-loading:focus,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-loading:hover,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-loading:hover:active,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #8e8e93;
+  background-color: transparent;
+}
+
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-focus,
+.rs-calendar-header-backward.rs-btn-cyan:focus,
+.rs-calendar-header-backward.rs-btn-cyan:hover,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-focus,
+.rs-calendar-header-forward.rs-btn-cyan:focus,
+.rs-calendar-header-forward.rs-btn-cyan:hover,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-focus,
+.rs-calendar-header-title.rs-btn-cyan:focus,
+.rs-calendar-header-title.rs-btn-cyan:hover {
+  color: #fff;
+  background: #00bcd4;
+}
+
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-active,
+.rs-calendar-header-backward.rs-btn-cyan:active,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-active,
+.rs-calendar-header-forward.rs-btn-cyan:active,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-active,
+.rs-calendar-header-title.rs-btn-cyan:active,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-cyan,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-cyan,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-cyan {
+  color: #fff;
+  background-color: #00b1cc;
+  background-image: none;
+}
+
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-active.focus,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-active:focus,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-active:hover,
+.rs-calendar-header-backward.rs-btn-cyan:active.focus,
+.rs-calendar-header-backward.rs-btn-cyan:active:focus,
+.rs-calendar-header-backward.rs-btn-cyan:active:hover,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-active.focus,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-active:focus,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-active:hover,
+.rs-calendar-header-forward.rs-btn-cyan:active.focus,
+.rs-calendar-header-forward.rs-btn-cyan:active:focus,
+.rs-calendar-header-forward.rs-btn-cyan:active:hover,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-active.focus,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-active:focus,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-active:hover,
+.rs-calendar-header-title.rs-btn-cyan:active.focus,
+.rs-calendar-header-title.rs-btn-cyan:active:focus,
+.rs-calendar-header-title.rs-btn-cyan:active:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-cyan.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-cyan:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-cyan:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-cyan.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-cyan:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-cyan:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-cyan.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-cyan:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-cyan:hover {
+  color: #fff;
+  background-color: #00b1cc;
+}
+
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-disabled,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-disabled.focus,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-disabled:active,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-disabled:focus,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-disabled:hover,
+.rs-calendar-header-backward.rs-btn-cyan.rs-btn-disabled:hover:active,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-disabled,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-disabled.focus,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-disabled:active,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-disabled:focus,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-disabled:hover,
+.rs-calendar-header-forward.rs-btn-cyan.rs-btn-disabled:hover:active,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-disabled,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-disabled.focus,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-disabled:active,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-disabled:focus,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-disabled:hover,
+.rs-calendar-header-title.rs-btn-cyan.rs-btn-disabled:hover:active {
+  color: #c5c6c7;
+  background: none;
+}
+
+.rs-calendar-header-backward.rs-btn-blue,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-loading:active,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-loading:focus,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-loading:hover,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-loading:hover:active,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-forward.rs-btn-blue,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-loading:active,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-loading:focus,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-loading:hover,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-loading:hover:active,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-title.rs-btn-blue,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-loading:active,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-loading:focus,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-loading:hover,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-loading:hover:active,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #8e8e93;
+  background-color: transparent;
+}
+
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-focus,
+.rs-calendar-header-backward.rs-btn-blue:focus,
+.rs-calendar-header-backward.rs-btn-blue:hover,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-focus,
+.rs-calendar-header-forward.rs-btn-blue:focus,
+.rs-calendar-header-forward.rs-btn-blue:hover,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-focus,
+.rs-calendar-header-title.rs-btn-blue:focus,
+.rs-calendar-header-title.rs-btn-blue:hover {
+  color: #fff;
+  background: #2196f3;
+}
+
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-active,
+.rs-calendar-header-backward.rs-btn-blue:active,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-active,
+.rs-calendar-header-forward.rs-btn-blue:active,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-active,
+.rs-calendar-header-title.rs-btn-blue:active,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-blue,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-blue,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-blue {
+  color: #fff;
+  background-color: #1787e8;
+  background-image: none;
+}
+
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-active.focus,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-active:focus,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-active:hover,
+.rs-calendar-header-backward.rs-btn-blue:active.focus,
+.rs-calendar-header-backward.rs-btn-blue:active:focus,
+.rs-calendar-header-backward.rs-btn-blue:active:hover,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-active.focus,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-active:focus,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-active:hover,
+.rs-calendar-header-forward.rs-btn-blue:active.focus,
+.rs-calendar-header-forward.rs-btn-blue:active:focus,
+.rs-calendar-header-forward.rs-btn-blue:active:hover,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-active.focus,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-active:focus,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-active:hover,
+.rs-calendar-header-title.rs-btn-blue:active.focus,
+.rs-calendar-header-title.rs-btn-blue:active:focus,
+.rs-calendar-header-title.rs-btn-blue:active:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-blue.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-blue:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-blue:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-blue.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-blue:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-blue:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-blue.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-blue:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-blue:hover {
+  color: #fff;
+  background-color: #1787e8;
+}
+
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-disabled,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-disabled.focus,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-disabled:active,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-disabled:focus,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-disabled:hover,
+.rs-calendar-header-backward.rs-btn-blue.rs-btn-disabled:hover:active,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-disabled,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-disabled.focus,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-disabled:active,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-disabled:focus,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-disabled:hover,
+.rs-calendar-header-forward.rs-btn-blue.rs-btn-disabled:hover:active,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-disabled,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-disabled.focus,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-disabled:active,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-disabled:focus,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-disabled:hover,
+.rs-calendar-header-title.rs-btn-blue.rs-btn-disabled:hover:active {
+  color: #c5c6c7;
+  background: none;
+}
+
+.rs-calendar-header-backward.rs-btn-violet,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-loading:active,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-loading:focus,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-loading:hover,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-loading:hover:active,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-forward.rs-btn-violet,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-loading:active,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-loading:focus,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-loading:hover,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-loading:hover:active,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-loading:not(.rs-btn-disabled):hover,
+.rs-calendar-header-title.rs-btn-violet,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-loading:active,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-loading:focus,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-loading:hover,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-loading:hover:active,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #8e8e93;
+  background-color: transparent;
+}
+
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-focus,
+.rs-calendar-header-backward.rs-btn-violet:focus,
+.rs-calendar-header-backward.rs-btn-violet:hover,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-focus,
+.rs-calendar-header-forward.rs-btn-violet:focus,
+.rs-calendar-header-forward.rs-btn-violet:hover,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-focus,
+.rs-calendar-header-title.rs-btn-violet:focus,
+.rs-calendar-header-title.rs-btn-violet:hover {
+  color: #fff;
+  background: #673ab7;
+}
+
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-active,
+.rs-calendar-header-backward.rs-btn-violet:active,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-active,
+.rs-calendar-header-forward.rs-btn-violet:active,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-active,
+.rs-calendar-header-title.rs-btn-violet:active,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-violet,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-violet,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-violet {
+  color: #fff;
+  background-color: #5f2bb3;
+  background-image: none;
+}
+
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-active.focus,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-active:focus,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-active:hover,
+.rs-calendar-header-backward.rs-btn-violet:active.focus,
+.rs-calendar-header-backward.rs-btn-violet:active:focus,
+.rs-calendar-header-backward.rs-btn-violet:active:hover,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-active.focus,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-active:focus,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-active:hover,
+.rs-calendar-header-forward.rs-btn-violet:active.focus,
+.rs-calendar-header-forward.rs-btn-violet:active:focus,
+.rs-calendar-header-forward.rs-btn-violet:active:hover,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-active.focus,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-active:focus,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-active:hover,
+.rs-calendar-header-title.rs-btn-violet:active.focus,
+.rs-calendar-header-title.rs-btn-violet:active:focus,
+.rs-calendar-header-title.rs-btn-violet:active:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-violet.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-violet:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-backward.rs-btn-violet:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-violet.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-violet:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-forward.rs-btn-violet:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-violet.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-violet:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-title.rs-btn-violet:hover {
+  color: #fff;
+  background-color: #5f2bb3;
+}
+
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-disabled,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-disabled.focus,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-disabled:active,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-disabled:focus,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-disabled:hover,
+.rs-calendar-header-backward.rs-btn-violet.rs-btn-disabled:hover:active,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-disabled,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-disabled.focus,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-disabled:active,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-disabled:focus,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-disabled:hover,
+.rs-calendar-header-forward.rs-btn-violet.rs-btn-disabled:hover:active,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-disabled,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-disabled.focus,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-disabled:active,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-disabled:focus,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-disabled:hover,
+.rs-calendar-header-title.rs-btn-violet.rs-btn-disabled:hover:active {
+  color: #c5c6c7;
+  background: none;
+}
+
+.rs-calendar-header-title {
+  margin: 0 4px;
+}
+
+.rs-calendar-header-error {
+  color: #8e8e93;
+  background-color: transparent;
+  color: #f44336;
+}
+
+.rs-calendar-header-error.rs-btn-loading:active,
+.rs-calendar-header-error.rs-btn-loading:focus,
+.rs-calendar-header-error.rs-btn-loading:hover,
+.rs-calendar-header-error.rs-btn-loading:hover:active,
+.rs-calendar-header-error.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #8e8e93;
+  background-color: transparent;
+}
+
+.rs-calendar-header-error.rs-btn-focus,
+.rs-calendar-header-error:focus,
+.rs-calendar-header-error:hover {
+  color: #fff;
+  background: #f44336;
+}
+
+.rs-calendar-header-error.rs-btn-active,
+.rs-calendar-header-error:active,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-error {
+  color: #fff;
+  background-color: #eb3626;
+  background-image: none;
+}
+
+.rs-calendar-header-error.rs-btn-active.focus,
+.rs-calendar-header-error.rs-btn-active:focus,
+.rs-calendar-header-error.rs-btn-active:hover,
+.rs-calendar-header-error:active.focus,
+.rs-calendar-header-error:active:focus,
+.rs-calendar-header-error:active:hover,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-error.focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-error:focus,
+.rs-open > .rs-dropdown-toggle.rs-calendar-header-error:hover {
+  color: #fff;
+  background-color: #eb3626;
+}
+
+.rs-calendar-header-error.rs-btn-disabled,
+.rs-calendar-header-error.rs-btn-disabled.focus,
+.rs-calendar-header-error.rs-btn-disabled:active,
+.rs-calendar-header-error.rs-btn-disabled:focus,
+.rs-calendar-header-error.rs-btn-disabled:hover,
+.rs-calendar-header-error.rs-btn-disabled:hover:active {
+  color: #c5c6c7;
+  background: none;
+}
+
+.rs-calendar-header-btn-disabled,
+.rs-calendar-header-btn-disabled:hover,
+.rs-calendar-header-btn-disabled:hover:focus {
+  cursor: not-allowed;
+  opacity: 0.3;
+  background: none;
+}
+
+.rs-calendar-header-btn-disabled:after {
+  display: none !important;
+}
+
+.rs-calendar-header-backward,
+.rs-calendar-header-forward {
+  font-size: 0;
+  width: 24px;
+}
+
+.rs-calendar-header-backward:before,
+.rs-calendar-header-forward:before {
+  font-family: rsuite-icon-font;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.rs-calendar-header-backward:before {
+  content: '\ea0a';
+}
+
+.rs-calendar-header-forward:before {
+  content: '\ea0c';
+}
+
+.rs-calendar-header-has-month:not(.rs-calendar-header-has-time) {
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.rs-calendar-header-has-month:not(.rs-calendar-header-has-time) .rs-calendar-header-month-toolbar {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.rs-calendar-header-has-month:not(.rs-calendar-header-has-time) .rs-calendar-header-month-toolbar:after,
+.rs-calendar-header-has-month:not(.rs-calendar-header-has-time) .rs-calendar-header-month-toolbar:before {
+  content: ' ';
+  display: table;
+}
+
+.rs-calendar-header-has-month:not(.rs-calendar-header-has-time) .rs-calendar-header-month-toolbar:after {
+  clear: both;
+}
+
+.rs-calendar-header-has-month:not(.rs-calendar-header-has-time) .rs-calendar-header-backward {
+  float: left;
+}
+
+.rs-calendar-header-has-month:not(.rs-calendar-header-has-time) .rs-calendar-header-forward {
+  float: right;
+}
+
+.rs-calendar-header-has-time:not(.rs-calendar-header-has-month) {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rs-calendar-header-has-time:not(.rs-calendar-header-has-month) .rs-calendar-header-time-toolbar {
+  float: none;
+  display: inline-block;
+}
+
+.rs-calendar-header-has-month.rs-calendar-header-has-time {
+  margin: 0 auto;
+}
+
+[dir='rtl'] .rs-calendar-header-backward,
+[dir='rtl'] .rs-calendar-header-forward {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.rs-calendar-view {
+  padding: 4px 12px 12px;
+}
+
+.rs-calendar-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.rs-calendar-table-row {
+  display: table-row;
+}
+
+.rs-calendar-table-cell {
+  display: table-cell;
+  width: 1%;
+  padding: 1px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.rs-calendar-table-cell-disabled .rs-calendar-table-cell-content,
+.rs-calendar-table-cell-disabled .rs-calendar-table-cell-content:hover,
+.rs-calendar-table-cell-un-same-month .rs-calendar-table-cell-content,
+.rs-calendar-table-cell-un-same-month .rs-calendar-table-cell-content:hover {
+  color: #c5c6c7;
+}
+
+.rs-calendar-table-cell-disabled .rs-calendar-table-cell-content,
+.rs-calendar-table-cell-disabled .rs-calendar-table-cell-content:hover {
+  background: none;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.rs-calendar-table-cell-disabled.rs-calendar-table-cell-is-today.rs-calendar-table-cell-selected .rs-calendar-table-cell-content:hover {
+  color: #fff;
+  border-color: #3498ff;
+  background-color: #3498ff;
+}
+
+.rs-calendar-table-cell-disabled.rs-calendar-table-cell-is-today .rs-calendar-table-cell-content,
+.rs-calendar-table-cell-disabled.rs-calendar-table-cell-selected .rs-calendar-table-cell-content {
+  opacity: 0.3;
+}
+
+.rs-calendar-table-cell-content {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.rs-calendar-table-cell-content:hover {
+  background-color: #f2faff;
+}
+
+.rs-calendar-table-cell-is-today .rs-calendar-table-cell-content {
+  border: 1px solid #1675e0;
+  padding: 4px;
+}
+
+.rs-calendar-table-cell-selected .rs-calendar-table-cell-content {
+  color: #fff;
+  border-color: #3498ff;
+  background-color: #3498ff;
+}
+
+.rs-calendar-table-header-row .rs-calendar-table-cell-content {
+  color: #8e8e93;
+  font-size: 12px;
+  line-height: 1.66666667;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.rs-calendar-table-header-row .rs-calendar-table-cell-content,
+.rs-calendar-table-header-row .rs-calendar-table-cell-content:focus,
+.rs-calendar-table-header-row .rs-calendar-table-cell-content:hover,
+.rs-calendar-table-header-row .rs-calendar-table-cell-content:hover:focus {
+  background: none;
+  cursor: auto;
+}
+
+.rs-calendar-table-cell-week-number {
+  display: table-cell;
+  width: 1%;
+  padding: 1px;
+  text-align: center;
+  vertical-align: middle;
+  color: #8e8e93;
+  background: #f7f7fa;
+  font-size: 12px;
+}
+
+.rs-calendar-table-row:nth-child(2) .rs-calendar-table-cell-week-number {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.rs-calendar-table-row:last-child .rs-calendar-table-cell-week-number {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.rs-calendar-month-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  border-top: 1px solid #e5e5ea;
+  margin-top: 4px;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.rs-calendar-show-month-dropdown .rs-calendar-month-dropdown {
+  display: block;
+}
+
+.rs-calendar-show-month-dropdown .rs-calendar-month-dropdown-content {
+  -webkit-animation: 0.3s linear A;
+  animation: 0.3s linear A;
+}
+
+.rs-calendar-month-dropdown-scroll {
+  height: 230px;
+}
+
+.rs-calendar-month-dropdown-row {
+  position: relative;
+  padding: 5px 12px 5px 52px;
+}
+
+.rs-calendar-month-dropdown-row:not(:last-child) {
+  border-bottom: 1px dotted #e5e5ea;
+}
+
+.rs-calendar-month-dropdown-year {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: 12px;
+}
+
+.rs-calendar-month-dropdown-year-active {
+  color: #1675e0;
+}
+
+.rs-calendar-month-dropdown-list {
+  display: block;
+}
+
+.rs-calendar-month-dropdown-list:after,
+.rs-calendar-month-dropdown-list:before {
+  content: ' ';
+  display: table;
+}
+
+.rs-calendar-month-dropdown-list:after {
+  clear: both;
+}
+
+.rs-calendar-month-dropdown-cell {
+  display: inline-block;
+  float: left;
+  width: calc((100% - 1px * 12) / 6);
+  margin: 1px;
+  text-align: center;
+  vertical-align: middle;
+  width: calc((100% - 1px * 12 - 1px) / 6) \9;
+}
+
+@media (-ms-high-contrast: none), screen and (-ms-high-contrast: active) {
+  .rs-calendar-month-dropdown-cell {
+    width: calc((100% - 1px * 12 - 1px) / 6);
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .rs-calendar-month-dropdown-cell {
+    width: calc((100% - 1px * 12 - 1px) / 6);
+  }
+}
+
+.rs-calendar-month-dropdown-cell-content {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.rs-calendar-month-dropdown-cell-content:hover {
+  background-color: #f2faff;
+}
+
+.rs-calendar-month-dropdown-cell:not(.rs-calendar-month-dropdown-cell-active).disabled .rs-calendar-month-dropdown-cell-content {
+  color: #c5c6c7;
+  background: none;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.rs-calendar-month-dropdown-cell-active.disabled .rs-calendar-month-dropdown-cell-content {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.rs-calendar-month-dropdown-cell-active .rs-calendar-month-dropdown-cell-content {
+  color: #fff;
+  border-color: #3498ff;
+  background-color: #3498ff;
+}
+
+.rs-calendar-time-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.rs-calendar-show-time-dropdown .rs-calendar-time-dropdown {
+  display: block;
+}
+
+.rs-calendar-show-time-dropdown .rs-calendar-time-dropdown-content {
+  -webkit-animation: 0.3s linear A;
+  animation: 0.3s linear A;
+}
+
+.rs-calendar-time-dropdown-row {
+  display: table;
+  width: 100%;
+}
+
+.rs-calendar-time-dropdown-column {
+  display: table-cell;
+  width: 1%;
+}
+
+.rs-calendar-time-dropdown-column > ul,
+.rs-calendar-time-dropdown-column > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rs-calendar-time-dropdown-column > ul {
+  height: 230px;
+  overflow-y: auto;
+  padding-bottom: 200px;
+}
+
+.rs-calendar-time-dropdown-column-title {
+  width: 100%;
+  background-color: #f7f7fa;
+  color: #8e8e93;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.66666667;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.rs-calendar-time-dropdown-cell {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px;
+  display: block;
+  color: #575757;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.rs-calendar-time-dropdown-cell-active.rs-calendar-time-dropdown-cell,
+.rs-calendar-time-dropdown-cell-active.rs-calendar-time-dropdown-cell:hover {
+  background-color: #3498ff;
+  color: #fff;
+}
+
+.rs-calendar-time-dropdown-cell,
+.rs-calendar-time-dropdown-cell:focus,
+.rs-calendar-time-dropdown-cell:hover {
+  text-decoration: none;
+}
+
+.rs-calendar-time-dropdown-cell:hover {
+  color: #575757;
+  background-color: #f2faff;
+}
+
+.rs-calendar-time-dropdown-cell-disabled,
+.rs-calendar-time-dropdown-cell-disabled:focus,
+.rs-calendar-time-dropdown-cell-disabled:hover {
+  color: #c5c6c7;
+  background: none;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.rs-calendar-time-dropdown-cell-active.rs-calendar-time-dropdown-cell-disabled.rs-calendar-time-dropdown-cell {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.rs-picker-date.rs-picker-default .rs-picker-toggle-caret,
+.rs-picker-date.rs-picker-default .rs-picker-toggle-clean,
+.rs-picker-daterange.rs-picker-default .rs-picker-toggle-caret,
+.rs-picker-daterange.rs-picker-default .rs-picker-toggle-clean {
+  top: 7px;
+}
+
+.rs-picker-daterange .rs-picker-toggle-caret:before {
+  content: '\f073' !important;
+  line-height: 17px;
+}
+
+.rs-picker-daterange-menu .rs-calendar {
+  display: inline-block;
+  width: 255px;
+  height: 278px;
+  padding-bottom: 12px;
+}
+
+.rs-picker-daterange-menu .rs-calendar:first-child {
+  border-right: 1px solid #e5e5ea;
+}
+
+.rs-picker-daterange-menu .rs-calendar-header {
+  width: 100%;
+  text-align: center;
+}
+
+.rs-picker-daterange-menu .rs-calendar-header-month-toolbar {
+  float: none;
+}
+
+.rs-picker-daterange-menu .rs-calendar-month-dropdown {
+  z-index: 1;
+}
+
+.rs-picker-daterange-menu .rs-calendar-month-dropdown-list {
+  width: 185px;
+}
+
+.rs-picker-daterange-menu .rs-picker-toolbar {
+  margin-top: 4px;
+}
+
+.rs-picker-cleanable.rs-picker-date .rs-picker-toggle-custom.rs-btn-lg,
+.rs-picker-cleanable.rs-picker-daterange .rs-picker-toggle-custom.rs-btn-lg {
+  padding-right: 50px;
+}
+
+.rs-picker-date .rs-picker-toggle-custom.rs-btn-lg .rs-picker-toggle-caret,
+.rs-picker-daterange .rs-picker-toggle-custom.rs-btn-lg .rs-picker-toggle-caret {
+  top: 10px;
+  right: 16px;
+}
+
+.rs-picker-date .rs-picker-toggle-custom.rs-btn-lg .rs-picker-toggle-clean,
+.rs-picker-daterange .rs-picker-toggle-custom.rs-btn-lg .rs-picker-toggle-clean {
+  top: 10px;
+  right: 40px;
+}
+
+.rs-picker-toolbar {
+  padding: 12px;
+  border-top: 1px solid #e5e5ea;
+}
+
+.rs-picker-toolbar:after,
+.rs-picker-toolbar:before {
+  content: ' ';
+  display: table;
+}
+
+.rs-picker-toolbar:after {
+  clear: both;
+}
+
+.rs-picker-toolbar-ranges {
+  display: inline-block;
+  margin-left: -10px;
+  margin-top: 5px;
+}
+
+.rs-picker-toolbar-right {
+  float: right;
+}
+
+.rs-picker-toolbar-option {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: 0 !important;
+  white-space: nowrap;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 8px 12px;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 6px;
+  color: #085cc9;
+  font-weight: 400;
+  border-radius: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.rs-picker-toolbar-option.rs-btn-ghost {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.rs-picker-toolbar-option.rs-btn-icon {
+  padding-left: 24px;
+  height: 36px;
+  position: relative;
+}
+
+.rs-btn-ghost.rs-picker-toolbar-option.rs-btn-icon {
+  padding-left: 22px;
+}
+
+.rs-picker-toolbar-option.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-left {
+  padding-left: 44px;
+}
+
+.rs-picker-toolbar-option.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right {
+  padding-left: 12px;
+  padding-right: 44px;
+}
+
+.rs-picker-toolbar-option.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right > .rs-icon {
+  left: auto;
+  right: 0;
+}
+
+.rs-picker-toolbar-option.rs-btn-icon > .rs-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 36px;
+  height: 36px;
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+.rs-btn-ghost.rs-picker-toolbar-option.rs-btn-icon > .rs-icon {
+  width: 34px;
+  height: 34px;
+  padding: 7px 0;
+}
+
+.rs-picker-toolbar-option.rs-btn-icon > .rs-icon > svg {
+  height: 14px;
+  vertical-align: middle;
+}
+
+.rs-picker-toolbar-option.rs-btn-icon-circle {
+  width: 36px;
+  padding: 8px;
+}
+
+.rs-picker-toolbar-option:focus,
+.rs-picker-toolbar-option:hover {
+  color: #575757;
+  text-decoration: none;
+}
+
+.rs-picker-toolbar-option.rs-btn-active,
+.rs-picker-toolbar-option:active {
+  outline: 0;
+  background-image: none;
+}
+
+.rs-picker-toolbar-option.rs-btn-loading:active,
+.rs-picker-toolbar-option.rs-btn-loading:focus,
+.rs-picker-toolbar-option.rs-btn-loading:hover,
+.rs-picker-toolbar-option.rs-btn-loading:hover:active,
+.rs-picker-toolbar-option.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #085cc9;
+  background-color: transparent;
+}
+
+.rs-picker-toolbar-option,
+.rs-picker-toolbar-option.rs-btn-active,
+.rs-picker-toolbar-option:active {
+  background-color: transparent;
+}
+
+.rs-picker-toolbar-option,
+.rs-picker-toolbar-option:active,
+.rs-picker-toolbar-option:focus,
+.rs-picker-toolbar-option:hover {
+  border-color: transparent;
+}
+
+.rs-picker-toolbar-option:focus,
+.rs-picker-toolbar-option:hover {
+  color: #024bb3;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.rs-picker-toolbar-option.rs-btn-active,
+.rs-picker-toolbar-option.rs-btn-active.focus,
+.rs-picker-toolbar-option.rs-btn-active:focus,
+.rs-picker-toolbar-option.rs-btn-active:hover,
+.rs-picker-toolbar-option:active,
+.rs-picker-toolbar-option:active.focus,
+.rs-picker-toolbar-option:active:focus,
+.rs-picker-toolbar-option:active:hover {
+  color: #003b94;
+}
+
+.rs-picker-toolbar-option.rs-btn-disabled:focus,
+.rs-picker-toolbar-option.rs-btn-disabled:hover {
+  color: #085cc9;
+  text-decoration: none;
+}
+
+.rs-picker-toolbar-option:not(:last-child) {
+  position: relative;
+}
+
+.rs-picker-toolbar-option:not(:last-child):before {
+  content: '';
+  width: 1px;
+  height: 20px;
+  background-color: #e5e5ea;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.rs-picker-toolbar-option-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.rs-picker-toolbar-option-disabled,
+.rs-picker-toolbar-option-disabled:active,
+.rs-picker-toolbar-option-disabled:focus,
+.rs-picker-toolbar-option-disabled:hover {
+  text-decoration: none;
+}
+
+.rs-picker-toolbar-right-btn-ok {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: 0 !important;
+  white-space: nowrap;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 8px 12px;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #3498ff;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-ghost {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-icon {
+  padding-left: 24px;
+  height: 36px;
+  position: relative;
+}
+
+.rs-btn-ghost.rs-picker-toolbar-right-btn-ok.rs-btn-icon {
+  padding-left: 22px;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-left {
+  padding-left: 44px;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right {
+  padding-left: 12px;
+  padding-right: 44px;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-icon.rs-btn-icon-with-text.rs-btn-icon-placement-right > .rs-icon {
+  left: auto;
+  right: 0;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-icon > .rs-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 36px;
+  height: 36px;
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+.rs-btn-ghost.rs-picker-toolbar-right-btn-ok.rs-btn-icon > .rs-icon {
+  width: 34px;
+  height: 34px;
+  padding: 7px 0;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-icon > .rs-icon > svg {
+  height: 14px;
+  vertical-align: middle;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-icon-circle {
+  width: 36px;
+  padding: 8px;
+}
+
+.rs-picker-toolbar-right-btn-ok:focus,
+.rs-picker-toolbar-right-btn-ok:hover {
+  color: #575757;
+  text-decoration: none;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-active,
+.rs-picker-toolbar-right-btn-ok:active {
+  outline: 0;
+  background-image: none;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-icon.rs-btn-icon-with-text > .rs-icon {
+  background: #2589f5;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-loading:active,
+.rs-picker-toolbar-right-btn-ok.rs-btn-loading:focus,
+.rs-picker-toolbar-right-btn-ok.rs-btn-loading:hover,
+.rs-picker-toolbar-right-btn-ok.rs-btn-loading:hover:active,
+.rs-picker-toolbar-right-btn-ok.rs-btn-loading:not(.rs-btn-disabled):hover {
+  color: #fff;
+  background-color: #3498ff;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-focus,
+.rs-picker-toolbar-right-btn-ok:focus {
+  color: #fff;
+  background-color: #2589f5;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-focus.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-picker-toolbar-right-btn-ok:focus.rs-btn-icon.rs-btn-icon-with-text > .rs-icon {
+  background: #1675e0;
+}
+
+.rs-picker-toolbar-right-btn-ok:hover {
+  color: #fff;
+}
+
+.rs-picker-toolbar-right-btn-ok:not(.rs-btn-disabled):hover {
+  background-color: #2589f5;
+}
+
+.rs-picker-toolbar-right-btn-ok:not(.rs-btn-disabled):hover.rs-btn-icon.rs-btn-icon-with-text > .rs-icon {
+  background: #1675e0;
+}
+
+.rs-open > .rs-dropdown-toggle.rs-picker-toolbar-right-btn-ok,
+.rs-picker-toolbar-right-btn-ok.rs-btn-active,
+.rs-picker-toolbar-right-btn-ok:active {
+  color: #fff;
+  background-color: #1675e0;
+}
+
+.rs-open > .rs-dropdown-toggle.rs-picker-toolbar-right-btn-ok.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-picker-toolbar-right-btn-ok.rs-btn-active.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-picker-toolbar-right-btn-ok:active.rs-btn-icon.rs-btn-icon-with-text > .rs-icon {
+  background: #0a5dc2;
+}
+
+.rs-open > .rs-dropdown-toggle.rs-picker-toolbar-right-btn-ok.focus,
+.rs-open > .rs-dropdown-toggle.rs-picker-toolbar-right-btn-ok:focus,
+.rs-open > .rs-dropdown-toggle.rs-picker-toolbar-right-btn-ok:hover,
+.rs-picker-toolbar-right-btn-ok.rs-btn-active.focus,
+.rs-picker-toolbar-right-btn-ok.rs-btn-active:focus,
+.rs-picker-toolbar-right-btn-ok.rs-btn-active:hover,
+.rs-picker-toolbar-right-btn-ok:active.focus,
+.rs-picker-toolbar-right-btn-ok:active:focus,
+.rs-picker-toolbar-right-btn-ok:active:hover {
+  color: #fff;
+  background-color: #1675e0;
+}
+
+.rs-open > .rs-dropdown-toggle.rs-picker-toolbar-right-btn-ok.focus.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-open > .rs-dropdown-toggle.rs-picker-toolbar-right-btn-ok:focus.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-open > .rs-dropdown-toggle.rs-picker-toolbar-right-btn-ok:hover.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-picker-toolbar-right-btn-ok.rs-btn-active.focus.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-picker-toolbar-right-btn-ok.rs-btn-active:focus.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-picker-toolbar-right-btn-ok.rs-btn-active:hover.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-picker-toolbar-right-btn-ok:active.focus.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-picker-toolbar-right-btn-ok:active:focus.rs-btn-icon.rs-btn-icon-with-text > .rs-icon,
+.rs-picker-toolbar-right-btn-ok:active:hover.rs-btn-icon.rs-btn-icon-with-text > .rs-icon {
+  background: #0a5dc2;
+}
+
+.open > .rs-dropdown-toggle.rs-picker-toolbar-right-btn-ok,
+.rs-picker-toolbar-right-btn-ok.rs-btn-active,
+.rs-picker-toolbar-right-btn-ok:active {
+  background-image: none;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-btn-disabled.focus,
+.rs-picker-toolbar-right-btn-ok.rs-btn-disabled:focus,
+.rs-picker-toolbar-right-btn-ok.rs-btn-disabled:hover {
+  background: #3498ff;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-picker-toolbar-btn-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.rs-picker-toolbar-right-btn-ok.rs-picker-toolbar-btn-disabled,
+.rs-picker-toolbar-right-btn-ok.rs-picker-toolbar-btn-disabled:hover,
+.rs-picker-toolbar-right-btn-ok.rs-picker-toolbar-btn-disabled:hover:active {
+  background-color: #3498ff;
+}
+
+.rs-picker-toggle-clean {
+  display: inline-block;
+  margin-left: 2px;
+  position: absolute;
+  top: 8px;
+  right: 30px;
+  font-weight: 400;
+  background: inherit;
+  color: #a6a6a6;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  cursor: pointer;
+  width: 19px\9 !important;
+  text-align: center\9;
+}
+
+.rs-picker-toggle-clean:before {
+  font-family: rsuite-icon-font !important;
+}
+
+.dropdown-placement-left-end .rs-picker-toggle-clean:before,
+.dropdown-placement-left-start .rs-picker-toggle-clean:before {
+  content: '\ea0a';
+}
+
+.dropdown-placement-right-end .rs-picker-toggle-clean:before,
+.dropdown-placement-right-start .rs-picker-toggle-clean:before {
+  content: '\ea0c';
+}
+
+.dropdown-placement-top-end .rs-picker-toggle-clean:before,
+.dropdown-placement-top-start .rs-picker-toggle-clean:before {
+  content: '\ea0e';
+}
+
+.dropdown-placement-bottom-end .rs-picker-toggle-clean:before,
+.dropdown-placement-bottom-start .rs-picker-toggle-clean:before {
+  content: '\ea08';
+}
+
+@media (-ms-high-contrast: none), screen and (-ms-high-contrast: active) {
+  .rs-picker-toggle-clean {
+    width: 19px;
+    text-align: center\9;
+  }
+}
+
+.rs-picker-toggle-clean:hover {
+  color: #f44336;
+}
+
+.rs-picker-date .rs-picker-toggle-clean,
+.rs-picker-daterange .rs-picker-toggle-clean {
+  right: 38px;
+}
+
+.rs-picker-toggle-caret {
+  display: inline-block;
+  margin-left: 2px;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-weight: 400;
+  color: #8e8e93;
+}
+
+.rs-picker-toggle-caret:before {
+  font-family: rsuite-icon-font !important;
+}
+
+.rs-picker-placement-left-end .rs-picker-toggle-caret:before,
+.rs-picker-placement-left-start .rs-picker-toggle-caret:before {
+  content: '\ea0a';
+}
+
+.rs-picker-placement-right-end .rs-picker-toggle-caret:before,
+.rs-picker-placement-right-start .rs-picker-toggle-caret:before {
+  content: '\ea0c';
+}
+
+.rs-picker-placement-top-end .rs-picker-toggle-caret:before,
+.rs-picker-placement-top-start .rs-picker-toggle-caret:before {
+  content: '\ea0e';
+}
+
+.rs-picker-placement-bottom-end .rs-picker-toggle-caret:before,
+.rs-picker-placement-bottom-start .rs-picker-toggle-caret:before,
+.rs-picker-toggle-caret:before {
+  content: '\ea08';
+}
+
+.rs-picker-countable .rs-picker-toggle-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rs-picker-toggle-custom-value,
+.rs-picker-toggle-value {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+.rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+  color: #1675e0;
+}
+
+.rs-picker-toggle-custom-value,
+.rs-picker-toggle-value {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.rs-picker-date.rs-picker-cleanable .rs-picker-toggle,
+.rs-picker-date.rs-picker-cleanable .rs-picker-toggle-custom,
+.rs-picker-daterange.rs-picker-cleanable .rs-picker-toggle,
+.rs-picker-daterange.rs-picker-cleanable .rs-picker-toggle-custom {
+  padding-right: 52px;
+}
+.rs-picker-cleanable .rs-picker-toggle,
+.rs-picker-cleanable .rs-picker-toggle-custom {
+  padding-right: 44px;
+}
+.rs-picker-default .rs-picker-toggle,
+.rs-picker-default .rs-picker-toggle-custom {
+  position: relative;
+  z-index: 5;
+  padding-right: 32px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  color: #575757;
+  border: 1px solid #e5e5ea;
+}
+.rs-picker-default .rs-btn,
+.rs-picker-default .rs-picker-toggle {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+.rs-picker-toggle,
+.rs-picker-toggle-custom {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.rs-picker-toggle {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: 0 !important;
+  white-space: nowrap;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 6px;
+}
+
+.rs-picker-default.rs-picker-disabled .rs-btn,
+.rs-picker-default.rs-picker-disabled .rs-picker-toggle,
+.rs-picker-input.rs-picker-disabled .rs-btn,
+.rs-picker-input.rs-picker-disabled .rs-picker-toggle {
+  background: #f7f7fa !important;
+}
+
+.rs-picker-disabled .rs-picker-toggle,
+.rs-picker-disabled .rs-picker-toggle-custom {
+  cursor: not-allowed;
+}

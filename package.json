@@ -1,0 +1,103 @@
+{
+  "name": "koinly",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://localhost:3000",
+  "dependencies": {
+    "@atlaskit/avatar-group": "4.0.4",
+    "@atlaskit/banner": "10.0.2",
+    "@atlaskit/button": "13.0.8",
+    "@atlaskit/flag": "12.0.6",
+    "@atlaskit/icon": "18.0.2",
+    "@atlaskit/panel": "0.2.2",
+    "@atlaskit/section-message": "4.0.2",
+    "@atlaskit/select": "9.1.6",
+    "axios": "0.19.0",
+    "caniuse-lite": "^1.0.30000974",
+    "chart.js": "2.8.0",
+    "classnames": "2.2.6",
+    "date-fns": "1.29.0",
+    "emotion": "10.0.5",
+    "filepond": "4.4.9",
+    "filepond-plugin-file-validate-size": "^2.1.3",
+    "filepond-plugin-file-validate-type": "1.2.1",
+    "fingerprintjs2": "^2.1.0",
+    "format-num": "1.0.0",
+    "highcharts": "7.1.2",
+    "history": "4.7.2",
+    "lodash": "^4.17.15",
+    "millify": "3.1.0",
+    "moment": "2.24.0",
+    "numeral": "2.0.6",
+    "query-string": "^6.12.0",
+    "react": "^16.8.3",
+    "react-accessible-accordion": "^3.3.3",
+    "react-blockies": "1.4.0",
+    "react-dom": "^16.8.3",
+    "react-filepond": "7.0.1",
+    "react-ga": "2.5.6",
+    "react-google-login": "5.0.4",
+    "react-json-view": "^1.19.1",
+    "react-minimal-pie-chart": "4.0.0",
+    "react-popper": "^2.2.1",
+    "react-progressbar": "^15.4.1",
+    "react-redux": "7.1.0",
+    "react-redux-toastr": "7.4.8",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "^3.4.1",
+    "react-share": "^3.0.1",
+    "react-slidedown": "^2.4.5",
+    "react-sparklines": "1.7.0",
+    "react-stripe-checkout": "2.6.3",
+    "react-switch": "5.0.0",
+    "react-table": "6.10.0",
+    "react-ultimate-pagination-bootstrap-4": "1.1.0",
+    "reactstrap": "8.0.0",
+    "redux": "4.0.1",
+    "redux-thunk": "2.3.0",
+    "rsuite": "^4.2.1",
+    "styled-components": "3.2.6",
+    "universal-cookie": "4.0.0"
+  },
+  "devDependencies": {
+    "husky": "^2.7.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "1.19.1",
+    "source-map-explorer": "^2.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "react-scripts start",
+    "serve": "serve -s build",
+    "build": "CI= REACT_APP_HEROKU_RELEASE_VERSION=2000 react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prettify": "prettier --write 'src/**/*.{js,jsx,json,css}'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

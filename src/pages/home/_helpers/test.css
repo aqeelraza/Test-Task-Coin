@@ -1,0 +1,99 @@
+.form-control{
+    background-color: #f8f9fa;
+    border-radius: 28px;
+    padding: 5px 10px;
+    height: auto;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+    padding:0;
+    margin: 0;
+}
+li{
+    padding:0 12px;
+}
+li.active{
+    background-color: #f8f9fa;
+    border-radius: 20px;
+}
+
+.accordion>.card>.card-header {
+    padding:0;
+    background-color: transparent;
+}
+.accordion__button:before{
+    display: none !important;
+}
+.accordion-header .currency-logo img,.accordion-body .currency-logo img {
+    max-width: 40px;
+    margin-right: 20px;
+}
+.accordion__button {
+    background-color: white !important;
+    color: #444;
+    padding: 0px !important;
+}
+
+.accordion__button:focus{
+    outline: none;
+}
+.accordion__panel{
+    background-color: #f8f9fa!important;
+}
+.accordion-body{
+    padding-left: 50px;
+    position: relative;
+}
+.accordion-body .progress {
+    height: 10px;
+    border-radius: .5rem;
+}
+.color-box{
+    height: 22px;
+    width: 22px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.accordion-header h5, .accordion-header p,.accordion-body p,.accordion-body h5,.accordion-body h6{
+    font-weight: 700;
+}
+
+.accordion {
+     border: none !important;
+}
+.loader-wrapper{
+    text-align: center;
+    height: 100%;
+    position: absolute;
+    width: calc(100% - 50px);
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.loader-wrapper .spinner-border{
+    margin-top: 20px;
+}
+.wallet-wrapper{
+    max-height: 400px;
+    overflow-y: auto;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
